@@ -17,7 +17,8 @@ namespace Airline_Reservation_Application.Views
     public sealed partial class Signup_page : Page
     {
         IsolatedStorageFile ISOFile = IsolatedStorageFile.GetUserStoreForApplication();
-        private object MessageBox;
+       // private MessageBox MessageBox;
+        
         private string gender;
 
         public IEnumerable<object> ObjUserDataList { get; private set; }
@@ -32,7 +33,7 @@ namespace Airline_Reservation_Application.Views
 
             {
 
-                MessageBox.Show("Invalid UserName");
+              //  //MessgeBox.Show("Invalid UserName");
 
             }
 
@@ -44,7 +45,7 @@ namespace Airline_Reservation_Application.Views
 
             {
 
-                MessageBox.Show("Password length should be minimum of 6 characters!");
+                //MessageBox.Show("Password length should be minimum of 6 characters!");
 
             }
 
@@ -56,7 +57,7 @@ namespace Airline_Reservation_Application.Views
 
             {
 
-                MessageBox.Show("Please enter your address!");
+                //MessageBox.Show("Please enter your address!");
 
             }
 
@@ -68,7 +69,7 @@ namespace Airline_Reservation_Application.Views
 
             {
 
-                MessageBox.Show("Please select gender!");
+                //MessageBox.Show("Please select gender!");
 
             }
 
@@ -80,7 +81,7 @@ namespace Airline_Reservation_Application.Views
 
             {
 
-                MessageBox.Show("Invalid PhonNo");
+                //MessageBox.Show("Invalid PhonNo");
 
             }
 
@@ -92,7 +93,7 @@ namespace Airline_Reservation_Application.Views
 
             {
 
-                MessageBox.Equals("Invalid EmailId");
+                //MessageBox.Equals("Invalid EmailId");
 
             }
 
@@ -124,13 +125,13 @@ namespace Airline_Reservation_Application.Views
 
                 {
 
-                    if (ObjUserData.UserName == UserLogin.UserName)
+                    //if (ObjUserData.UserName == UserLogin.UserName)
 
-                    {
+                    //{
 
-                        Temp = 1;
+                    //    Temp = 1;
 
-                    }
+                    //}
 
                 }
 
@@ -140,7 +141,7 @@ namespace Airline_Reservation_Application.Views
 
                 {
 
-                    ObjUserDataList.Add(ObjUserData);
+                  //  ObjUserDataList.Add(ObjUserData);
 
                     if (ISOFile.FileExists("RegistrationDetails"))
 
@@ -164,9 +165,9 @@ namespace Airline_Reservation_Application.Views
 
                     }
 
-                    MessageBox.Show("Congrats! your have successfully Registered.");
+                    //MessageBox.Show("Congrats! your have successfully Registered.");
 
-                    NavigationService.Navigate(new Uri("/Views/Login.xaml", UriKind.Relative));
+                  //  NavigationService.Navigate(new Uri("/Views/Login.xaml", UriKind.Relative));
 
                 }
 
@@ -174,7 +175,7 @@ namespace Airline_Reservation_Application.Views
 
                 {
 
-                    MessageBox.Show("Sorry! user name is already existed.");
+                    //MessageBox.Show("Sorry! user name is already existed.");
 
                 }
 
@@ -186,7 +187,7 @@ namespace Airline_Reservation_Application.Views
 
             {
 
-                MessageBox.Show("Please enter all details");
+                //MessageBox.Show("Please enter all details");
 
             }
 

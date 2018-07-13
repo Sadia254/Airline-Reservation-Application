@@ -9,29 +9,29 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid x:Name="LayoutRoot" Background="White">
-        <Grid.RowDefinitions>
+        <!--<Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <!--Title-->
+            --><!--Title--><!--
             <TextBlock Text="Login Page" Foreground="Black" FontSize="40"/>
 
-            <!--UserName-->
+            --><!--UserName--><!--
             <TextBlock Text="UserID" Foreground="Black" FontSize="30"/>
-            <TextBox  BorderBrush="LightGray" Name="UserName" GotFocus="UserName_GotFocus"/>
+            <TextBox  BorderBrush="LightGray" Name="UserName"/>
 
-            <!--Password-->
+            --><!--Password--><!--
             <TextBlock  Foreground="Black" Text="Password" Margin="9,-7,0,0" FontSize="30"/>
-            <PasswordBox BorderBrush="LightGray" Name="PassWord" GotFocus="UserName_GotFocus" />
+            <PasswordBox BorderBrush="LightGray" Name="PassWord" />
 
-            <!--Login Button-->
-            <Button Content="Login" Background="#FF30DABB" Name="Login" Click="Login_Click" />
+            --><!--Login Button--><!--
+            <Button Content="Login" Background="#FF30DABB" Name="LoginBtn" Click="Login_Click" />
 
-            <!--  Registration Button-->
+            --><!--  Registration Button--><!--
             <Button Content="Registration" Background="#FF30DABB" Name="SignUp" Click="SignUp_Click"/>
 
-        </StackPanel>
+        </StackPanel>-->
 
     </Grid>
 </Page>

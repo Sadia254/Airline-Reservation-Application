@@ -22,9 +22,20 @@ namespace Airline_Reservation_Application
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        ViewModel vm;
+
         public MainPage()
         {
             this.InitializeComponent();
+            vm = new ViewModel();//Allocating Memory
+            this.DataContext = vm; //Binding MainPage to ViewModel
+            vm.CreateDummyUsers();//GEt the uset
+            TextBlockName.Text = vm.mainUser.FullName;
+           
+
         }
+
+
     }
 }
