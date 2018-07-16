@@ -8,5 +8,6 @@ namespace Airline_Reservation_Application.Models
 {
     class Flight
     {
+        
     }
 }

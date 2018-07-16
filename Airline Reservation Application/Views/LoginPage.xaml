@@ -5,23 +5,29 @@
     xmlns:local="using:Airline_Reservation_Application.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Image 
+                    Source="/Assets/NASA.jpg" 
+                    Stretch="UniformToFill" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" />
         <StackPanel>
-        <StackPanel HorizontalAlignment="Left">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="UserName:"/>
-            <TextBox Name="LoginTextBox"/>
+            <TextBox Name="LoginTextBox" Text="admin"/>
 
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Left" >
+        <StackPanel HorizontalAlignment="Center" >
             <TextBlock Text="Password:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox x:Name="PassTextBox"/>
+            <TextBox x:Name="PassTextBox" Text="asdf"/>
 
         </StackPanel>
-            <Button Name="AcceptBtn" Content="Login" Click="AcceptBtn_Click"></Button>
+            <Button Name="AcceptBtn" Content="Login" Click="AcceptBtn_Click" HorizontalAlignment="Center"></Button>
         </StackPanel>
     </Grid>
 </Page>

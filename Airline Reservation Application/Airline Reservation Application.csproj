@@ -114,6 +114,9 @@
     <None Include="Airline Reservation Application_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\NASA 2.jpg" />
+    <Content Include="Assets\nasa 3.jpg" />
+    <Content Include="Assets\nasa.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

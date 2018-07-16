@@ -9,7 +9,14 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid HorizontalAlignment="Left" Margin="16,0,0,0" VerticalAlignment="Center">
-        <StackPanel VerticalAlignment="Stretch">
+        
+            <Image 
+                    Source="/Assets/nasa 3.jpg" 
+                    Stretch="UniformToFill" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center" />
+
+            <StackPanel VerticalAlignment="Stretch">
             <TextBlock Text="Hello "></TextBlock>
             <TextBlock Name="TextBlockName" ></TextBlock>
             
