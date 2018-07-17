@@ -8,21 +8,13 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid HorizontalAlignment="Left" Margin="16,0,0,0" VerticalAlignment="Center">
-        
-            <Image 
-                    Source="/Assets/nasa 3.jpg" 
-                    Stretch="UniformToFill" 
-                    HorizontalAlignment="Center" 
-                    VerticalAlignment="Center" />
+    <Grid>
+        <Button Content="Click and Book" HorizontalAlignment="Left" Margin="178,238,0,0" VerticalAlignment="Top" Width="404" Height="100"/>
+        <Button Content="View Seats" HorizontalAlignment="Left" Height="100" Margin="800,238,0,0" VerticalAlignment="Top" Width="402" Click="Button_Click"/>
+        <Button Content="Click and Update" HorizontalAlignment="Left" Height="90" Margin="800,410,0,0" VerticalAlignment="Top" Width="402"/>
+        <Button Content="Passenger Information" HorizontalAlignment="Left" Height="90" Margin="178,410,0,0" VerticalAlignment="Top" Width="404"/>
+        <TextBlock HorizontalAlignment="Left" Margin="380,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="621" SelectionChanged="TextBlock_SelectionChanged"><Run Text="                                                                    "/><LineBreak/><Run Text="                                                                       "/><LineBreak/><Run Text="                                                        WELCOME TO PRIME AIRLINES"/></TextBlock>
+        <Button Content="Exit" HorizontalAlignment="Left" Height="58" Margin="898,584,0,0" VerticalAlignment="Top" Width="176"/>
 
-            <StackPanel VerticalAlignment="Stretch">
-            <TextBlock Text="Hello "></TextBlock>
-            <TextBlock Name="TextBlockName" ></TextBlock>
-            
-        </StackPanel>
-        <StackPanel>
-      
-        </StackPanel>
     </Grid>
 </Page>

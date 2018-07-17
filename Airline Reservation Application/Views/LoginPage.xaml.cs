@@ -30,6 +30,13 @@ namespace Airline_Reservation_Application.Views
         private void AcceptBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(MainPage));
+       
+        }
+
+        private void BtnRegister_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
+

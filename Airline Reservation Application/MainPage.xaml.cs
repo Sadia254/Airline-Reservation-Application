@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Airline_Reservation_Application
 {
@@ -22,20 +22,24 @@ namespace Airline_Reservation_Application
     /// </summary>
     public sealed partial class MainPage : Page
     {
-
-        ViewModel vm;
-
         public MainPage()
         {
             this.InitializeComponent();
-            vm = new ViewModel();//Allocating Memory
-            this.DataContext = vm; //Binding MainPage to ViewModel
-            vm.CreateDummyUsers();//GEt the uset
-            TextBlockName.Text = vm.mainUser.FullName;
-           
+        }
+        private void AcceptBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(Views.LoginPage));
 
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
 
+        }
+
+        private void TextBlock_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
