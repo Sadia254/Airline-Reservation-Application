@@ -45,12 +45,7 @@
                         HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
 
 
-                <Button x:Name="btnRegister"
-                       Grid.Column="1"
-                        Content="Register"
-                        Background="#D32424"
-                        Foreground="White"
-                        HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnRegister_Click" Margin="0,0,0,0"/>
+                
             </Grid>
         </Grid>
     </Grid>

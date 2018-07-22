@@ -23,7 +23,7 @@
             </StackPanel>
             <TextBlock  TextWrapping="Wrap" Text="Seat Number: " />
             <TextBox x:Name="txtSeatNumber" TextWrapping="Wrap" />
-            <Button Content="Save" HorizontalAlignment="Left" Height="52" Margin="532,0,0,0" VerticalAlignment="Center" Width="168"/>
+            <Button Content="Save" HorizontalAlignment="Left" FontSize ="30" Height="52" Margin="532,0,0,0" VerticalAlignment="Center" Width="168"/>
         </StackPanel>
 
     </Grid>
