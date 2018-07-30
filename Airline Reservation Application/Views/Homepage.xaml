@@ -67,7 +67,7 @@
                 <Button x:Name="PassengersButton" Background="SkyBlue"
                     MinWidth="128" MinHeight="64"
                     HorizontalAlignment="Center" VerticalAlignment="Center"
-                    FontSize="20" Grid.Row="0" Grid.Column="1" TabIndex="2" TabNavigation="Local" Click="PassengersButton_Click" Content="Passangers"/>
+                    FontSize="20" Grid.Row="0" Grid.Column="1" TabIndex="2" TabNavigation="Local" Click="PassengersButton_Click" Content="Passengers"/>
 
                 <Button x:Name="SeatsButton" Background="SkyBlue"
                     MinWidth="128" MinHeight="64"
@@ -80,7 +80,7 @@
                     FontSize="20" Grid.Row="1" Grid.Column="1" TabIndex="4" TabNavigation="Local" Content="Flights" Click="FlightsButton_Click"/>
 
             </Grid>
-            <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="ms-appx:///Assets/flightLogo.gif" Grid.Row="2" Grid.Column="1" Canvas.ZIndex="2" Stretch="UniformToFill" Width="264" Height="266" Grid.RowSpan="2">
+            <Image HorizontalAlignment="Left" VerticalAlignment="Center" Source="ms-appx:///Assets/flightLogo.gif" Grid.Row="3" Grid.Column="1" Canvas.ZIndex="2" Stretch="UniformToFill" Width="159" Height="156" Margin="77,0,0,0">
                 <Image.FocusVisualPrimaryBrush>
                     <ImageBrush/>
                 </Image.FocusVisualPrimaryBrush>

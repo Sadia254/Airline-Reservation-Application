@@ -42,7 +42,7 @@
                     <RowDefinition Height="2*"/>
                 </Grid.RowDefinitions>
 
-                <Button x:Name="BackButton" HorizontalAlignment="Left"
+                <Button x:Name="BackButton" Background ="DarkRed" HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Margin="15" Click="BackButton_Click" TabIndex="7" Content="Go Back" />
 
