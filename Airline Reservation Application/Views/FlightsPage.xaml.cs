@@ -12,7 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using WinUX.Mvvm.Services;
+using Airline_Reservation_Application.Models;
+using Airline_Reservation_Application.ViewModels;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -21,22 +22,21 @@ namespace Airline_Reservation_Application.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class Login : Page
+    public sealed partial class FlightsPage : Page
     {
-        public void Login_Click(object sender, RoutedEventArgs e)
-
+        List<Flight> Flights;
+        public FlightsPage()
         {
+            this.InitializeComponent();
 
-            
+            Flights = new List<Flight>(FlightsViewModel.GetFlights());
 
+            FlightsListView.ItemsSource = Flights;
         }
 
-        public void SignUp_Click(object sender, RoutedEventArgs e)
-
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-
-         //   NavigationService.Navigate(new Uri("/Views/SignUpPage.xaml", UriKind.Relative));
-
+            this.Frame.GoBack();
         }
     }
 }

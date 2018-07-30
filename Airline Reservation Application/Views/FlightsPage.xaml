@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="Airline_Reservation_Application.Views.FlightsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Airline_Reservation_Application.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:Airline_Reservation_Application.Models"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid UseLayoutRounding="True">
+            <Grid.Background>
+                <ImageBrush ImageSource="ms-appx:///Assets/nasa 3.jpg" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Column="1" Grid.Row="1" Background="#242e38">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="8*"/>
+                    <ColumnDefinition Width="2*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+
+                <Button x:Name="BackButton" HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Margin="15" Click="BackButton_Click" TabIndex="7">Go Back</Button>
+
+                <ListView x:Name="FlightsListView" Grid.Row="1" Grid.Column="1">
+                    <ListView.ItemTemplate>
+                        <DataTemplate x:DataType="data:Flight">
+                            <StackPanel Padding="5" Margin="5">
+                                <TextBlock Text="{x:Bind FlightDetail}" FontSize="24"/>
+                                <TextBlock Text="{x:Bind DepartureDetail}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>

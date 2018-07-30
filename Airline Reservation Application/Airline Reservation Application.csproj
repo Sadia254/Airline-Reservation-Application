@@ -95,27 +95,30 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Database.cs" />
     <Compile Include="Models\Flight.cs" />
-    <Compile Include="Models\Reservation.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\Seat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SQLite\Net\Platform.cs" />
-    <Compile Include="ViewModel.cs" />
+    <Compile Include="ViewModels\BookingViewModel.cs" />
+    <Compile Include="ViewModels\FlightsViewModel.cs" />
+    <Compile Include="ViewModels\Login.cs" />
+    <Compile Include="Views\BookingPage.xaml.cs">
+      <DependentUpon>BookingPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FlightsPage.xaml.cs">
+      <DependentUpon>FlightsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomePage.xaml.cs">
+      <DependentUpon>HomePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\PassengerInfo.xaml.cs">
-      <DependentUpon>PassengerInfo.xaml</DependentUpon>
+    <Compile Include="Views\PassengerPage.xaml.cs">
+      <DependentUpon>PassengerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Register.xaml.cs">
-      <DependentUpon>Register.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\SeatNumbers.xaml.cs">
-      <DependentUpon>SeatNumbers.xaml</DependentUpon>
+    <Compile Include="Views\SeatsPage.xaml.cs">
+      <DependentUpon>SeatsPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -123,8 +126,17 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="Airline Reservation Application_TemporaryKey.pfx" />
+    <Content Include="Assets\Flight_Seat.png" />
+    <Content Include="Assets\Flight_Seat_Gray.png" />
+    <Content Include="Static\Seats.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Static\Users.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\flightLogo.gif" />
     <Content Include="Assets\NASA 2.jpg" />
     <Content Include="Assets\nasa 3.jpg" />
     <Content Include="Assets\nasa.jpg" />
@@ -156,7 +168,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Page Include="MainPage.xaml">
+    <Page Include="Views\BookingPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FlightsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\HomePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,15 +184,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\PassengerInfo.xaml">
+    <Page Include="Views\PassengerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Register.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\SeatNumbers.xaml">
+    <Page Include="Views\SeatsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

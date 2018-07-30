@@ -1,0 +1,67 @@
+﻿[
+
+{
+    "number": "1",
+    "isBooked": false
+},
+    {
+        "number": "2",
+        "isBooked": false
+    },
+    {
+        "FirstName": "Jane",
+        "LastName": "Doe",
+        "PhoneNumber": "123",
+        "Company": "Microsoft",
+        "number": "3",
+        "isBooked": true
+    },
+    {
+        "number": "4",
+        "isBooked": false
+    },
+    {
+        "number": "5",
+        "isBooked": false
+    },
+    {
+        "number": "6",
+        "isBooked": false
+    },
+    {
+        "number": "7",
+        "isBooked": false
+    },
+    {
+        "number": "8",
+        "isBooked": false
+    },
+    {
+        "number": "9",
+        "isBooked": false
+    },
+    {
+        "number": "10",
+        "isBooked": false
+    },
+    {
+        "number": "11",
+        "isBooked": false
+    },
+    {
+        "number": "12",
+        "isBooked": false
+    },
+    {
+        "number": "13",
+        "isBooked": false
+    },
+    {
+        "number": "14",
+        "isBooked": false
+    },
+    {
+        "number": "15",
+        "isBooked": false
+    }
+]

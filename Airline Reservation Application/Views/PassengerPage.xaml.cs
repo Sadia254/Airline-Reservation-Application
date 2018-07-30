@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Airline_Reservation_Application.Models;
+using Airline_Reservation_Application.ViewModels;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -20,16 +22,32 @@ namespace Airline_Reservation_Application.Views
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SeatNumbers : Page
+    public sealed partial class PassengerPage : Page
     {
-        public SeatNumbers()
+        List<Seat> Passengers;
+
+        public PassengerPage()
         {
             this.InitializeComponent();
+
+            Passengers = new List<Seat>();
+            Passengers = BookingViewModel.GetSeats().FindAll(seat => seat.IsBooked);
+
+            if (Passengers.Count == 0)
+            {
+                Passengers.Add(new Seat()
+                {
+                    FirstName = "There are no Seats booked yet."
+                });
+            }
+
+            PassengersListView.ItemsSource = Passengers;
+
         }
 
-        private void Page_Loaded(object sender, RoutedEventArgs e)
+        private void BackButton_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.GoBack();
         }
     }
 }
